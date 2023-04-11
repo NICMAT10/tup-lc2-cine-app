@@ -1,1 +1,1 @@
-# tup-lc2-cine-app
+Pagina de Peliculas
