@@ -13,9 +13,9 @@
   --color-titulos: #E83845;
   --color-texto-blanco: #FFF;
   --color-gradient: linear-gradient(
-    to right,
-    var(--color-theme),
-    var(--color-back-active)
+  to right,
+  var(--color-theme),
+  var(--color-back-active)
   );
 }
 body {
@@ -117,17 +117,17 @@ main p {
     padding-right: 10%;
   }
   footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   }
 }
 
 .loader {
   width: 60px;
   height: 60px;
- }
- 
- .loader::before {
+}
+
+.loader::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -137,13 +137,13 @@ main p {
   border-top: 2px solid #8900FF;
   border-right: 2px solid transparent;
   animation: spinner8217 0.8s linear infinite;
- }
- 
- @keyframes spinner8217 {
+}
+
+@keyframes spinner8217 {
   to {
-   transform: rotate(360deg);
+  transform: rotate(360deg);
   }
- }
+}
 .loader-container{
   margin: auto;
   display: flex;
