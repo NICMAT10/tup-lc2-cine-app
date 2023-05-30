@@ -1,0 +1,45 @@
+header h1 {
+  text-shadow: 2px 2px 4px black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 20px;
+}
+
+form #botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+form button {
+  margin-right: 5px;
+  background-color: rgb(27, 99, 57);
+  color: white;
+  border-radius: 5px;
+  padding: 3px 6px 3px 6px;
+  border: none;
+}
+
+#mensaje {
+  height: 150px;
+}
+
+#sec-cine-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sec-cine-result p {
+  background-color: #E83845;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  padding: 20px 200px;
+  border-radius: 15px;
+  margin-top: 30px;
+}

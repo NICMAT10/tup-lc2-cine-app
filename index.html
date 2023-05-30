@@ -8,6 +8,7 @@
   <title>TUP LC2 - TP Integrador - Cine</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/index.css">
 </head>
 
 <body>
@@ -32,7 +33,8 @@
     <section id="form-movie-new">
       <!--Seccion para agregar una pelicula favorita por codigo-->
       <form action="" class="form-container">
-        <input type="text" name="agregarPeli">
+        <label for="codigo">Agregar Pelicula Favorita por Codigo:</label><br><br>
+        <input type="number" id="codigo" name="codigo">
         <button type="submit">Agregar</button>
 
       </form>
@@ -40,21 +42,63 @@
 
     <section id="sec-messages">
       <!--Seccion para mensajes-->
-      <p>Película agregada con éxito</p>
-      <p>Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar</p>
-      <p> La Película ingresada ya se encuentra almacenada</p>
+      <p id="success">Película agregada con éxito</p>
+      <p id="error">Error:   La Película seleccionada no se encuentra en la API o se produjo un error al consultar</p>
+      <p id="warning"> La Película ingresada ya se encuentra almacenada</p>
     </section>
 
     <section id="sec_peliculas">
       <!--Seccion visualizacion de peliculas-->
       <div class="contenedorPeliculas" id="contenedorPeliculas">
-        <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="Creed 3">
+        <img src= "img/Creed3.jpg" alt="Creed 3">
         <h3>Creed III</h3>
         <p><strong>Código:</strong> 677179 <br />
           <strong>Titulo original:</strong> Creed III <br />
           <strong>Idioma original:</strong> en <br />
-          <strong>Año:</strong> 2023-03-01  <br/>
+          <strong>Año:</strong> 2023-03-01  <br />
         </p>
+        <div id="contPeliculas-boton">
+          <button id="agregarPelicula"> Agregar a Favoritos</button>
+        </div>
+      </div>
+
+      <div class="contenedorPeliculas" id="contenedorPeliculas">
+        <img src="img/MarioBros.jpg" alt="Super Mario Bros">
+        <h3>Super Mario Bros: La pelicula</h3>
+        <p><strong>Código:</strong>502356 <br />
+          <strong>Titulo original:</strong> The  Super Mario Bros Movie <br />
+          <strong>Idioma original:</strong> en <br />
+          <strong>Año:</strong> 2023-04-05 <br />
+        </p>
+        <div id="contPeliculas-boton">
+          <button id="agregarPelicula"> Agregar a Favoritos</button>
+        </div>
+      </div>
+
+      <div class="contenedorPeliculas">
+        <img src="img/Shazam.jpg" alt="Shazam Pelicula">
+        <h3>¡Shazam!: La furia de los dioses</h3>
+        <p><strong>Código:</strong> 594767 <br />
+          <strong>Titulo original:</strong> ¡Shazam! The Fury of the Gods <br />
+          <strong>Idioma original:</strong> en <br>
+          <strong>Año:</strong> 2023-03-15 <br />
+        </p>
+        <div id="contPeliculas-boton">
+          <button id="agregarPelicula"> Agregar a Favoritos</button>
+        </div>
+      </div>
+      
+      <div class="contendorPeliculas">
+        <img src="img/GatoconBotas.jpg" alt="Gatos con Botas Pelicula">
+        <h3>Gatos con Botas: El ultimo deseo</h3>
+        <p><strong>Código:</strong> 315162 <br />
+          <strong>Titulo original:</strong> Puss in Boots: The Last Wish <br />
+          <strong>Idioma original:</strong> en <br />
+          <strong>Año:</strong> 2022-12-07 <br />
+        </p>
+        <div id="contPeliculas-boton">
+          <button id="agregarPelicula"> Agregar a Favoritos</button>
+        </div>
       </div>
     </section>
     <section id="sec_paginador_peliculas">
