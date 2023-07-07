@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="img/cinema_popcorn.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/pages/favorities.css">
+  <script src="js/pages/favorities.js" defer></script>
   <title>TUP LC2 - TP Integrador</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
@@ -32,28 +33,21 @@
     <h2>Mis Peliculas Favoritas</h2>
     <section id="sec-favorities-list">
       <!--Sección contenido de peliculas favoritas-->
-      <div class="contenedorPeliculasFavoritas" id="contenedorPeliculasFavoritas">
-        <img src="img/Creed3.jpg" alt="Creed 3">
-        <h3>Creed III</h3>
-        <p><strong>Código:</strong> 677179 <br />
-          <strong>Titulo original:</strong> Creed III <br />
-          <strong>Idioma original:</strong> en <br />
-          <strong>Año:</strong> 2023-03-01  <br/>
-          <strong>Resumen:</strong> Después de dominar el mundo del boxeo, Adonis Creed ha prosperado tanto en su carrera como en su vida familiar. Cuando un amigo de la infancia y ex prodigio de boxeo, Damien Anderson, resurge después de cumplir una larga sentencia en prisión, está ansioso por demostrar que merece su disparo en el ring. El enfrentamiento entre los antiguos amigos es más que una pelea. Para resolver el puntaje, Adonis debe poner su futuro en la línea para luchar contra Damien, un luchador que no tiene nada que perder
-        </p>
-      </div>
-      <div class="contenedorPeliculasFavoritas" id="contenedorPeliculasFavoritas">
-        <img src="img/MarioBros.jpg" alt="MarioBros">
-        <h3>Super Mario Bros. La Pelicula <br></h3>
-        <p><b>Codigo:</b>502356 <br><br>
-        <b>Titulo original:</b> The Super Mario Bros. Movie <br>
-        <b>Idioma original:</b> en <br>
-        <b>Resumen:</b> Mientras trabaja bajo tierra para arreglar una tuberia de agua, los plomeros de Brooklyn Mario y su hermano Luigi son transporados por una misteriosa tuberia y llegan a un nuevo mundo magico. Pero cuando los hermanos  se separan, Mario se embarca en una busqueda epica para encontrar a Luigi. Con la ayuda de un residente del Reino Champiñon, Toad y algo de entrenamiento de la gobernnante del Reino Champiñon, la Pincesa Peach, Mario conocera su propio poder.</p>
+      <div class="contenedorPeliculasFavoritas" id="contenedorFavoritas">
+        
     </div>
+
+    <div id="mensajeNoPeliculas" class="mensaje" style="display: none;">
+      No tienes películas seleccionadas en sus Favoritos.
+  </div>
+
+  <div id="mensajeError" class="mensaje" style="display: none;">
+      Ha ocurrido un error al cargar la información. Por favor, intenta nuevamente.
+  </div>
     </section>
   </main>
   <footer>
-    <p>Desarrollado con ♥ - LC2</p>
+    <p>Desarrollado con ♥ por Nicolas Matias Maraz - LC2</p>
   </footer>
 
 </body>
