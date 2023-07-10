@@ -1,5 +1,5 @@
 
-async function obtenerDatosAPI() {
+/*async function obtenerDatosAPI() {
   try {
     const apiKey = '9f8b29787abf3118f815587d67917a25'; 
     const language = 'es-ES';
@@ -32,4 +32,4 @@ btnAnterior.addEventListener('click', () => {
     pagina -= 1;
     cargarPeliculas();
   }
-});
+});*/

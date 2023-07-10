@@ -1,6 +1,6 @@
 //Paginacion
 //let pagina = 1;
-/*const btnAnterior = document.getElementById('btnAnterior');
+const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
 
 btnSiguiente.addEventListener('click', () => {
@@ -15,7 +15,7 @@ btnAnterior.addEventListener('click', () => {
     pagina -= 1;
     cargarPeliculas();
   }
-});*/
+});
 
 async function cargarPeliculas() {
   const resultados = await obtenerDatosAPI();
@@ -44,7 +44,7 @@ async function cargarPeliculas() {
   
 }
 
-/*async function obtenerDatosAPI() {
+async function obtenerDatosAPI() {
   try {
     const apiKey = '9f8b29787abf3118f815587d67917a25'; 
     const language = 'es-ES';
@@ -59,7 +59,7 @@ async function cargarPeliculas() {
     console.error('Error en al obtener los datos de api', error);
     return [];
   }
-}*/
+}
 
 
 // Evento para agregar películas a favoritos por código
