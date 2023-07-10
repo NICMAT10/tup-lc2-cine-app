@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/cinema_popcorn.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/pages/help.css">
+    <link rel="stylesheet" href="css/pages/help.css" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <script src="js/pages/help.js" defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       emailjs.init('lR0Ea2k45JfcAwC4R')
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
@@ -73,15 +75,13 @@
         </form>
       </section>
 
-      <section id="mensajes">
-        <div id="mensaje-enviado" class="mensaje-exito" style="display: none;"></div>
-        <div id="mensaje-error" class="mensaje-error" style="display: none;"></div>
-    </section>
-
-      <section id="sec-cine-result">
+      <p id="message">
         <!-- Sección donde se debe mostrar los mensajes de error -->
-        <!--<p>Ingrese un Email válido</p>-->
-      </section>
+        <!--<p id="success-message" class="message success-message"></p>
+        <p id="error-message" class="message error-message"></p>
+        <p id="validated-message" class="message validated-message">Ingrese un
+          correo electrónico válido</p>-->
+        </p>
     </main>
     <footer>
       <p>Desarrollado con ♥ por Nicolas Matias Maraz - LC2</p>

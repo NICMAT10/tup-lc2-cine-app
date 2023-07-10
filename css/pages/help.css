@@ -24,8 +24,13 @@ header h1 {
   border: none;
 }
 
-#mensaje {
-  height: 150px;
+#message {
+  display: none;
+  color: green;
+}
+
+#message.error {
+  color: red;
 }
 
 #sec-cine-result {
