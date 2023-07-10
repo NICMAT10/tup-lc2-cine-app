@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const email = document.getElementsByName("email")[0].value;
     const message = document.getElementById("textmensaje").value;
 
-    // Aquí puedes realizar validaciones adicionales si es necesario
+    
 
     // Enviar los datos a través de EmailJS
     const templateParams = {
