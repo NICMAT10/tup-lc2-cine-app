@@ -6,18 +6,19 @@
 }
 :root {
   /* Declaro variables CSS con colores principales */
-  --color-theme: #FFCE30;
-  --color-active: #288BA8;
-  --color-back-active: #746AB0;
+  --color-theme: #ffce30;
+  --color-active: #288ba8;
+  --color-back-active: #746ab0;
   --color-back-inactive: #c4c6c9;
-  --color-titulos: #E83845;
-  --color-texto-blanco: #FFF;
-  --color-gradient: linear-gradient(
-  to right,
-  var(--color-theme),
-  var(--color-back-active)
-  );
+  --color-titulos: #e83845;
+  --color-texto-blanco: #fff;
+  --color-verde: #28a79c;
+  --color-font: #1d1d1d;
+  --color-button: #7f8c8d;
+  --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
+  --color-button-hover: #808080;
 }
+
 body {
   height: 100%;
   width: 100%;
@@ -27,8 +28,8 @@ ul {
   padding: 0;
   margin: 0;
 }
-button,
-a {
+
+a{
   user-select: none;
   -webkit-user-select: none;
 }
@@ -89,6 +90,7 @@ h2 {
   color: var(--color-titulos);
   margin: 16px 0;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h3 {
   color: var(--color-theme);

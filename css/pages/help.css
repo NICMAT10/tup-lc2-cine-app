@@ -2,20 +2,20 @@ header h1 {
   text-shadow: 2px 2px 4px black;
 }
 
-form {
+.col{
   display: flex;
   flex-direction: column;
   width: 400px;
   margin-top: 20px;
 }
 
-form #botones {
+#botones {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
 
-form button {
+.col button {
   margin-right: 5px;
   background-color: rgb(27, 99, 57);
   color: white;

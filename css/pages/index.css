@@ -5,19 +5,7 @@
 header h1 {
   text-shadow: 2px 2px 4px black;
 }
-:root {
-  /* Declaro variables CSS con colores principales */
-  --color-theme: #ffce30;
-  --color-active: #288ba8;
-  --color-back-active: #746ab0;
-  --color-back-inactive: #c4c6c9;
-  --color-titulos: #e83845;
-  --color-texto-blanco: #fff;
-  --color-verde: #28a79c;
-  --color-font: #1d1d1d;
-  --color-button: #7f8c8d;
-  --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
-}
+
 
 .contenedorPeliculas {
   display: grid;

@@ -41,11 +41,12 @@ async function cargarPeliculas() {
 
     cartelera.appendChild(tarjeta);
   }
+  
 }
 
 async function obtenerDatosAPI() {
   try {
-    const apiKey = '9f8b29787abf3118f815587d67917a25'; // Reemplaza con tu propia clave de API
+    const apiKey = '9f8b29787abf3118f815587d67917a25'; 
     const language = 'es-ES';
 
     const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=${language}&page=${pagina}`;
@@ -55,7 +56,7 @@ async function obtenerDatosAPI() {
 
     return data.results;
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error en al obtener los datos de api', error);
     return [];
   }
 }
@@ -85,26 +86,32 @@ cartelera.addEventListener('click', async (event) => {
     await agregarPeliculaPorCodigo(codigo);
   }
 });
+
 // Función para agregar películas a favoritos por código
 async function agregarPeliculaPorCodigo(codigo) {
-  const favoritos = JSON.parse(localStorage.getItem('FAVORITOS')) || [];
+  try {
+    const favoritos = JSON.parse(localStorage.getItem('FAVORITOS')) || [];
 
-  if (favoritos.includes(codigo)) {
-    mostrarMensaje('warning');
-    return;
-  }
+    if (favoritos.includes(codigo)) {
+      mostrarMensaje('warning');
+      return;
+    }
 
-  const resultados = await obtenerDatosAPI();
-  const peliculaExistente = resultados.find((pelicula) => pelicula.id === codigo);
+    const resultados = await obtenerDatosAPI();
+    const peliculaExistente = resultados.find((pelicula) => pelicula.id === codigo);
 
-  if (!peliculaExistente) {
+    if (!peliculaExistente) {
+      mostrarMensaje('error');
+      return;
+    }
+
+    favoritos.push(codigo);
+    localStorage.setItem('FAVORITOS', JSON.stringify(favoritos));
+    mostrarMensaje('success');
+  } catch (error) {
+    console.error('Error, no se agrego la pelicula por el codigo', error);
     mostrarMensaje('error');
-    return;
   }
-
-  favoritos.push(codigo);
-  localStorage.setItem('FAVORITOS', JSON.stringify(favoritos));
-  mostrarMensaje('success');
 }
 
 // Función para mostrar mensajes
@@ -126,4 +133,3 @@ function mostrarMensaje(idMensaje) {
 
 // Inicializar la carga de películas al cargar la página
 cargarPeliculas();
-

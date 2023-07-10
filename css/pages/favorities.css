@@ -1,50 +1,8 @@
-/*#sec-favorities-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  padding: 20px;
-  justify-content: center;
-  width: 100%;
-}
-
-#sec-favorities-list h3 {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-#sec-favorities-list img {
-  border-radius: 15px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
+/*Header*/
 header h1 {
   text-shadow: 2px 2px 4px black;
 }
-
-#contenedorPeliculasFavoritas p {
-  color: var(--color-active);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 12px;
-}*/
-
-:root {
-  /* Declaro variables CSS con colores principales */
-  --color-theme: #ffce30;
-  --color-active: #288ba8;
-  --color-back-active: #746ab0;
-  --color-back-inactive: #c4c6c9;
-  --color-titulos: #e83845;
-  --color-texto-blanco: #fff;
-  --color-verde: #28a79c;
-  --color-font: #1d1d1d;
-  --color-button: #7f8c8d;
-  --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
-  --color-button-hover: #808080;
-}
-
-
+/*Estilos en Favoritas*/
 #sec-favorities-list {
   width: 100%;
   max-width: 800px;
